@@ -1,0 +1,44 @@
+
+
+Case 1: Only Instance Variable
+
+
+	String title		: 30 x 2	= 60 Bytes
+	String authorName	: 50 x 2	= 100 Bytes
+	double price					= 8 Bytes
+	int publicationYear				= 4 Bytes
+	--------------------------------------------
+	Memory for an Object 			= 172 Bytes
+	
+	
+Case 2: Both Instance and Class Variable
+
+
+	int accountNo							= 4 Bytes
+	double balance							= 8 Bytes
+-------------------------------------------------------------
+	Memory for instance variables 			= 12 Bytes	
+	static double perDayTransactionLimit	= 8 Bytes
+--------------------------------------------------------------
+Memory for an Object 						= 12 Bytes + 8 Bytes (shared)	
+
+
+
+
+Case 3: Mutiple Class Variables
+	
+	
+	int accountNo							= 4 Bytes
+	double balance							= 8 Bytes
+-------------------------------------------------------------
+	Memory for instance variables 			= 12 Bytes	
+	
+	
+	static double perDayTransactionLimit	= 8 Bytes
+	static double perTranscationLimit		= 8 Bytes
+---------------------------------------------------------------	
+	Memory for Class variables 				= 16 Bytes	
+	
+
+Memory for an Object 						= 12 Bytes + 16 Bytes (shared)	
+	
